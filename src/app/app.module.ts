@@ -11,15 +11,13 @@ import {SpotifyService} from './services/spotify.service';
 
 // Pipes
 import { NopicturePipe } from './pipes/nopicture.pipe';
+import { SafeDomPipe } from './pipes/safe-dom.pipe';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-
-
-
-
+import { ArtistDetailsComponent } from './components/artist-details/artist-details.component';
 
 
 @NgModule({
@@ -28,7 +26,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    NopicturePipe
+    NopicturePipe,
+    ArtistDetailsComponent,
+    SafeDomPipe
   ],
   imports: [
     BrowserModule,

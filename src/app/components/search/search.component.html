@@ -17,7 +17,7 @@
       <hr>
 
       <div class="row">
-        <div *ngFor="let artist of spotifyService.artists" class="col-md-3 text-center pointer" >
+        <div  *ngFor="let artist of spotifyService.artists" [routerLink]="['/artist', artist.id]" class="col-md-3 text-center pointer" >
           <img [src]="artist.images | nopicture" alt="" class="img-thumbnail">
 
           <p>
